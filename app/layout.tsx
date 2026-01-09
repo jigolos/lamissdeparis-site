@@ -10,6 +10,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="lamiss-body">
         {children}
+		<script
+		 src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+		 async
+		></script>
+
       </body>
     </html>
   );
