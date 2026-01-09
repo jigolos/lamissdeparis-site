@@ -58,7 +58,6 @@ export default function Page() {
             <a href="#services" style={{ color: "var(--lamiss-text)", textDecoration: "none", opacity: 0.9 }}>Services</a>
             <a href="#faq" style={{ color: "var(--lamiss-text)", textDecoration: "none", opacity: 0.9 }}>FAQ</a>
             <a href="#gallery" style={{ color: "var(--lamiss-text)", textDecoration: "none", opacity: 0.9 }}>Gallery</a>
-            <a href="/admin/" style={{ color: "var(--lamiss-text)", textDecoration: "none", opacity: 0.9 }}>Admin</a>
           </nav>
         </div>
       </header>
@@ -191,9 +190,6 @@ export default function Page() {
             ))}
           </div>
 
-          <p style={{ marginTop: 14, fontSize: 13, opacity: 0.7 }}>
-            Tip: upload new images from <a href="/admin/">/admin</a> and add them to the Gallery list.
-          </p>
         </div>
       </section>
 
