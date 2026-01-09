@@ -1,7 +1,8 @@
 {
   "images": [
-    { "src": "/uploads/picture1.jpg", "fit": "contain", "height": 240 },
-    { "src": "/uploads/picture2.jpg", "fit": "cover", "height": 240 },
-    { "src": "/uploads/picture3.jpg", "fit": "contain", "height": 300 }
+    "/uploads/picture1.jpg",
+    "/uploads/picture2.jpg",
+    "/uploads/picture3.jpg",
+    "/uploads/b2e7fb8f-3ead-4a64-9879-3ea9889d0999.jpeg"
   ]
 }
