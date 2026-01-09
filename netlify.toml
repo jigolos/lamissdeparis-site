@@ -2,9 +2,12 @@
   command = "npm run build"
   publish = "out"
 
-# Optional: ensure /admin works nicely with trailing slashes
 [[redirects]]
   from = "/admin"
-  to = "/admin/"
+  to = "/admin/index.html"
   status = 301
-  force = true
+
+[[redirects]]
+  from = "/admin/"
+  to = "/admin/index.html"
+  status = 301
