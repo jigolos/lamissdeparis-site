@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment this for local development only (then run: npx decap-server)
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "settings"
+    label: "Website Content"
+    files:
+      - name: "site"
+        label: "Brand & About"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "About Text", name: "about", widget: "text" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Address", name: "address", widget: "string", required: false }
+
+      - name: "services"
+        label: "Services"
+        file: "content/services.json"
+        format: "json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - name: "faq"
+        label: "FAQ"
+        file: "content/faq.json"
+        format: "json"
+        fields:
+          - label: "FAQ Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+      - name: "gallery"
+        label: "Gallery"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image" }

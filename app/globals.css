@@ -1,0 +1,38 @@
+:root {
+  /* Lamiss de Paris palette (from logo) */
+  --lamiss-bg: #f3e9df;
+  --lamiss-surface: rgba(255, 255, 255, 0.70);
+  --lamiss-surface-strong: rgba(255, 255, 255, 0.88);
+  --lamiss-primary: #b08b7d;
+  --lamiss-border: #dec9bf;
+  --lamiss-text: #4a3a35;
+  --lamiss-muted: rgba(74, 58, 53, 0.75);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+.lamiss-body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--lamiss-text);
+  background: var(--lamiss-bg);
+}
+
+a {
+  color: var(--lamiss-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Nice focus for accessibility */
+:focus-visible {
+  outline: 2px solid var(--lamiss-primary);
+  outline-offset: 2px;
+}
